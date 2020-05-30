@@ -1,8 +1,8 @@
 Package: reactR
 Type: Package
 Title: React Helpers
-Version: 0.2.1
-Date: 2018-10-23
+Version: 0.4.2
+Date: 2020-01-23
 Authors@R: c(
       person(
         "Facebook", "Inc"
@@ -10,20 +10,32 @@ Authors@R: c(
         , comment = "React library in lib, https://facebook.github.io/react; see AUTHORS for full list of contributors"
       ),
       person(
+        "Michel","Weststrate",
+        , role = c("aut", "cph")
+        , comment = "mobx library in lib, https://github.com/mobxjs"
+      ),
+      person(
         "Kent", "Russell"
         , role = c("aut", "cre")
         , comment = "R interface"
         , email = "kent.russell@timelyportfolio.com"
+      ),
+      person(
+        "Alan", "Dipert"
+        , role = c("aut")
+        , comment = "R interface"
+        , email = "alan@rstudio.com"
       )
     )
 Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
-Description: Make it easy to use 'React' in R with helper
-              dependency functions, embedded 'Babel' 'transpiler',
+Description: Make it easy to use 'React' in R with 'htmlwidget' scaffolds,
+              helper dependency functions, an embedded 'Babel' 'transpiler',
               and examples.
-URL: https://github.com/timelyportfolio/reactR
-BugReports: https://github.com/timelyportfolio/reactR/issues
+URL: https://github.com/react-R/reactR
+BugReports: https://github.com/react-R/reactR/issues
 License: MIT + file LICENSE
 LazyData: TRUE
+Encoding: UTF-8
 Imports:
     htmltools
 Suggests:
@@ -31,6 +43,8 @@ Suggests:
     rmarkdown,
     shiny,
     V8,
-    knitr
-RoxygenNote: 6.0.1
+    knitr,
+    usethis,
+    jsonlite
+RoxygenNote: 7.0.2
 VignetteBuilder: knitr
